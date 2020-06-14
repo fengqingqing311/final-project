@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>登录</title>
+</head>
+<style>
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.clear:after {
+    content: '';
+    display: block;
+    height: 0;
+    clear: both;
+}
+.clear{
+	height: 350px;
+    width: 370px;
+    margin: 30px auto;
+    background-image: url(images/logo.png);
+    box-shadow: 0px 0px 5px rgba(118,118,118,0.5);
+    text-align: center;
+    display: block;
+}
+.id{
+	font-size: 18px;
+	font-weight: bold;
+	margin-top: 30px;
+
+}
+.user{
+	width: 270px;
+    height: 30px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    border: 1px solid #d03d3d;
+}
+.password{
+	width: 270px;
+    height: 30px;
+    margin-bottom: 25px;
+    border: 1px solid #d03d3d;
+    
+}
+.login{
+	width: 340px;
+    height: 40px;
+    margin-bottom: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #d03d3d;
+    border: 1px solid #d03d3d;
+}
+
+:focus {
+    outline: none;
+}
+.footer{
+    margin-left: 150px;
+    margin-top: 20px;
+	font-size: 12px;
+	color: #000;
+}
+</style>
+<body>
+	<div class="clear">
+		<p class="id">账号登陆</p>
+		<div>
+			<form method="post" action="">
+				用户名：<input type="text" name="username" class="user"/><br>
+				密码:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="password" name="password" value="" class="password"/><br>
+				<input type="submit" value="登录" class="login"/><br>
+			</form>
+			<p class="footer">忘记密码？&nbsp;&nbsp;忘记用户名&nbsp;&nbsp;免费注册</p>
+		</div>
+        
+	</div>
+</body>
+</html>
