@@ -16,25 +16,47 @@ body {
 .header__info {
     line-height: 32px;
 } 
-.header__info li {
+.header__info a{
+	color:  rgba(188, 23, 23,1);
+}
+.header__info >li {
     float: left;
     margin-left: 27px;
-    background: no-repeat left center;
-}
-.box{
-	border: 1px solid  rgba(188, 23, 23,1);
+    margin-right: 27px;
 }
 li.iphone {
     padding-left: 15px;
-    background-image: url(../images/iphone.png);
+    background: url(../images/iphone.png) no-repeat left center;
 }
-
 li.weixin {
     padding-left: 23px;
-    background-image: url(../images/weixin.png);
+    background: url(../images/weixin.png) no-repeat left center;
 }
 a.com{
 	color:  rgba(188, 23, 23,1);
+}
+.header__info .shop {
+	position: relative;
+}
+.header__info ul{
+	position: absolute;
+  	width: 80px;
+  	display: none;
+  	z-index: 1;
+}
+.shop a{
+	color:  rgba(188, 23, 23,1);
+}
+.header__info li.shop:hover ul {
+	display: block;
+	background-color: rgba(118,118,118,0.3); 
+}
+.shop{
+	background: url(../images/icon.png) no-repeat right center;
+	padding-right: 25px;
+}
+.shop:hover{
+	background: url(../images/bottom.png) no-repeat right center;
 }
 .header-bottom{
 	height: 121px;
@@ -379,4 +401,7 @@ a.com{
 	color: #000;
 	padding: 0 12px;
     border-right: 1px solid #000;
+}
+.footer a{
+	color: #000;
 }
